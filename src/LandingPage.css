@@ -1,0 +1,107 @@
+.page {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.txtcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor_active {
+  width: 10px;
+  height: 20px;
+  background-color: white;
+  transition: 0.5s ease-in;
+}
+
+.cursor_inactive {
+  width: 10px;
+  height: 20px;
+  background-color: black;
+  transition: 0.5s ease-out;
+}
+
+.letters {
+  height: 12px;
+  margin-right: 3px;
+}
+
+.open_close {
+  height: 35px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.textHome {
+  margin-top: 15px;
+  font-size: 14px;
+  font-family: "Ford";
+}
+
+.fade-out {
+  animation: fadeOut ease 2s;
+  -webkit-animation: fadeOut ease 2s;
+  -moz-animation: fadeOut ease 2s;
+  -o-animation: fadeOut ease 2s;
+  -ms-animation: fadeOut ease 2s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
