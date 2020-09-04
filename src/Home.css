@@ -1,4 +1,24 @@
+
+.shape-R-glow {
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  color: black;
+  padding: 20px;
+}
+
+
+
 .home_container {
   background-color: black;
   min-height: 100vh;
 }
+
+.twitter{
+  -webkit-animation:"light-blink-other 2s reverse infinite linear"}
+
+  
+   
+
+
