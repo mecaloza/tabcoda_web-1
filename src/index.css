@@ -16,3 +16,18 @@ code {
   font-family: "Ford";
   src: url(./fonts/Ford-Antenna-Light.ttf);
 }
+
+@font-face {
+  font-family: "Effra_regular";
+  src: url(./fonts/Effra_Std_Rg.ttf);
+}
+
+@font-face {
+  font-family: "Effra_light";
+  src: url(./fonts/Effra_Std_Lt.ttf);
+}
+
+@font-face {
+  font-family: "Bangers";
+  src: url(./fonts/Bangers-Regular.ttf);
+}

@@ -6,7 +6,9 @@ import {
   Switch,
   Route,
   useHistory,
+  Link,
 } from "react-router-dom";
+import { motion } from "framer-motion";
 
 global.counter = 0;
 
@@ -17,6 +19,13 @@ function LandingPage() {
   const [isBlink, setIsBlink] = useState(false);
   const [isClick, setIsClick] = useState(false);
   const [interval_c, setInterval_c] = useState();
+
+  const pageVariants = {
+    exit: {
+      opacity: 0,
+      transition: { duration: 1 },
+    },
+  };
 
   //blink cursor effect
   useEffect(() => {
@@ -32,16 +41,21 @@ function LandingPage() {
   };
 
   const clickOff = () => {
+    console.log("si");
+    console.log(global.counter);
     if (global.counter < 9) {
       global.counter = 0;
       setPositions([]);
       clearInterval(interval_c);
       setIsClick(false);
+    } else if (global.counter >= 9) {
+      clearInterval(interval_c);
+      setPositions([1, 1, 1, 1, 1, 1, 1, 1]);
     }
   };
 
   useEffect(() => {
-    if (isClick) {
+    if (isClick && global.counter < 9) {
       let s = setInterval(() => type(), 300);
       setInterval_c(s);
     }
@@ -49,24 +63,28 @@ function LandingPage() {
 
   const type = () => {
     global.counter = global.counter + 1;
-    if (global.counter >= 9) {
-      clearInterval(interval_c);
-      setTimeout(() => history.push("./home"), 2000);
-    } else {
+    console.log("entre");
+    if (global.counter === 9) {
+      setTimeout(() => (history.push("/home"), 2000));
+    } else if (global.counter < 9) {
       setPositions((old_array) => [...old_array, 1]);
     }
   };
 
   return (
-    <div
+    <motion.div
       className="page"
       onMouseDown={() => clickOn()}
       onMouseUp={() => clickOff()}
       onTouchStart={() => clickOn()}
       onTouchEnd={() => clickOff()}
+      variants={pageVariants}
+      animate={{}}
+      exit="exit"
     >
       <div
-        className={`txtcontainer ${global.counter >= 9 ? "fade-out" : null}`}
+        // className={`txtcontainer ${global.counter >= 9 ? "fade-out" : null}`}
+        className={`txtcontainer`}
       >
         <img
           src={require(`./img/tabcoda_open.svg`)}
@@ -91,10 +109,9 @@ function LandingPage() {
           className={"open_close"}
         />
       </div>
-      <p className={`textHome ${global.counter >= 9 ? "fade-out" : null}`}>
-        Click and hold to enter
-      </p>
-    </div>
+      {/* <p className={`textHome ${global.counter >= 9 ? "fade-out" : null}`}> */}
+      <p className={`textHome`}>Click and hold to enter</p>
+    </motion.div>
   );
 }
 
