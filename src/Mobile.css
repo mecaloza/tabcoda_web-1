@@ -5,7 +5,6 @@
     rgba(14, 14, 14, 1) 0%,
     rgba(0, 0, 0, 1) 100%
   );
-  /* min-height: 200vh; */
   overflow: scroll;
   height: 100vh;
   position: relative;
@@ -39,6 +38,14 @@
   width: 18em;
 }
 
+.arrow_down {
+  display: flex;
+  width: 95%;
+  justify-content: flex-end;
+  position: sticky;
+  top: 95vh;
+  z-index: 1;
+}
 /* .svg_Onpc {
   width: 18em;
 }
@@ -100,6 +107,32 @@
     1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
+.text_about_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text_about_title {
+  font-size: 5em;
+  font-family: "Bangers";
+}
+
+.text_about_subtitle {
+  font-size: 2em;
+  font-family: "Bangers";
+}
+
+.text_about_content_container {
+  width: 85%;
+  margin: 3% 0 3% 0;
+  text-align: justify;
+}
+
+.work_flow_img {
+  margin: 3% 0;
+}
+
 @media (max-width: 768px) {
   .svg_cel_container {
     width: 15rem;
@@ -127,5 +160,13 @@
 
   .ui {
     top: 27%;
+  }
+
+  .arrow_down {
+    top: 82vh;
+  }
+
+  .text_about_title {
+    font-size: 4em;
   }
 }
