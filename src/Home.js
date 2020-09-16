@@ -121,7 +121,9 @@ function Home() {
               </motion.svg>
             </div>
             <div className="service_icon_container">
-              <motion.img src={require("./img/ui.svg")} height={"150px"} />
+              <motion.img src={require("./img/ui.svg")} height={"150px"} onClick={() => {
+                        history.push("/WebApp")
+                      }}/>
             </div>
             <div className="service_icon_container">
               <img src={require("./img/automation.svg")} height={"150px"} />
@@ -134,3 +136,5 @@ function Home() {
 }
 
 export default Home;
+
+
