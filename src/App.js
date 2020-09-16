@@ -5,22 +5,42 @@ import {
   Switch,
   Route,
   useRouteMatch,
+  useLocation,
 } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import Home from "./Home";
+import Mobile from "./Mobile";
+import New2 from "./New2";
+import TopBar from "./TopBar";
+import WebApp from "./WebApp";
+
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
+  console.log("cesar");
+
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <LandingPage />
-        </Route>
-      </Switch>
-      <Route exact path="/home">
-        <Home />
-      </Route>
-    </Router>
+    <>
+      <div>
+        <AnimatePresence>
+          <Switch location={location} key={location.key}>
+            <Route exact path="/home">
+              <Home />
+            </Route>
+            <Route exact path="/mobile">
+              <Mobile />
+            </Route>
+            <Route exact path="/Webapp">
+              <WebApp />
+            </Route>
+            <Route path="/">
+              <LandingPage />
+            </Route>
+          </Switch>
+        </AnimatePresence>
+      </div>
+    </>
   );
 }
 

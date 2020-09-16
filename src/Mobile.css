@@ -1,0 +1,131 @@
+.mobile_container {
+  background: rgb(14, 14, 14);
+  background: radial-gradient(
+    circle,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  /* min-height: 200vh; */
+  overflow: scroll;
+  height: 100vh;
+  position: relative;
+}
+
+.mobile_container::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile_container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.circle_init {
+  background-color: #20fc00;
+  border-radius: 100%;
+  margin: auto auto;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.svg_cel_container {
+  margin: auto;
+  position: sticky;
+  top: 12vh;
+  z-index: 1;
+  width: 18em;
+}
+
+/* .svg_Onpc {
+  width: 18em;
+}
+
+.svg_Onmobile {
+  width: 13em;
+} */
+
+.after_vh {
+  position: absolute;
+  width: 100%;
+  top: 100vh;
+  z-index: 0;
+}
+
+.srollable_things {
+  width: 1024px;
+  height: 0px;
+}
+
+.container_popup {
+  height: 12rem;
+  width: 10rem;
+  position: absolute;
+  overflow: hidden;
+  /* background-color: blue; */
+}
+
+.ux {
+  top: 5%;
+}
+
+.ui {
+  top: 13%;
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex_ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.square_popup {
+  height: 0rem;
+  width: 10rem;
+  background-color: #20fc00;
+  position: relative;
+  z-index: 1.2;
+}
+
+.popup_txt {
+  font-size: 9rem;
+  font-family: "Bangers";
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+@media (max-width: 768px) {
+  .svg_cel_container {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .svg_cel_container {
+    width: 13rem;
+  }
+
+  .container_popup {
+    height: 8rem;
+  }
+
+  .square_popup {
+    max-height: 2rem;
+    top: 1rem;
+    width: 4.8rem;
+  }
+
+  .popup_txt {
+    font-size: 5rem;
+  }
+
+  .ui {
+    top: 27%;
+  }
+}

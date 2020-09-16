@@ -11,8 +11,143 @@
 
 
 .home_container {
-  background-color: black;
+  background: rgb(14, 14, 14);
+  background: radial-gradient(
+    circle,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
   min-height: 100vh;
+  overflow: hidden;
+}
+
+.subcontainer_width {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  /* background-color: blue; */
+  padding: 50px 0px;
+}
+
+.letters2 {
+  height: 15px;
+  margin-right: 1px;
+}
+
+.open_close2 {
+  height: 27px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.logo {
+  display: flex;
+  /* flex: 1; */
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor_active2 {
+  width: 8px;
+  height: 20px;
+  background-color: white;
+  transition: 0.5s ease-in;
+  margin-left: 3px;
+}
+
+.cursor_inactive2 {
+  width: 8px;
+  height: 20px;
+  background-color: black;
+  transition: 0.5s ease-out;
+  margin-left: 3px;
+}
+
+.social_icons_container {
+  /* flex: 1; */
+  /* background-color: khaki; */
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  left: 85%;
+}
+
+.empty {
+  flex: 1;
+  height: 10px;
+}
+
+.social_icon {
+  color: white;
+  font-size: 24px;
+  margin-left: 8px;
+}
+
+.services_container {
+  /* background-color: red; */
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.service_title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.service_icon_container {
+  /* background-color: teal; */
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  /* background-color: rgba(5, 5, 223, 0.767); */
+  color: white;
+  margin-bottom: 40px;
+  max-height: 150px;
+}
+
+.services_icons_container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.color_white {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .social_icons_container {
+    left: 82%;
+  }
+
+  .service_icon_container {
+  }
+}
+
+@media (max-width: 500px) {
+  .topbar {
+    justify-content: flex-start;
+  }
+
+  .social_icons_container {
+    left: 73%;
+  }
+
+  .service_icon_container {
+    width: 100%;
+  }
 }
 .house-rectangle-right-1 {
   right: 20%;
