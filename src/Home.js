@@ -77,10 +77,13 @@ function Home() {
       <div className="subcontainer_width">
         <div className="services_container">
           <div className="service_title">
-            <h4>WE BUILD YOUR IDEAS</h4>
+            <h4>CREAMOS TUS IDEAS</h4>
           </div>
           <div className="services_icons_container">
-            <div className="service_icon_container">
+            <motion.div
+              className="service_icon_container"
+              whileHover={{ scale: 1.05 }}
+            >
               <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns="http://www.w3.org/1999/xlink"
@@ -119,15 +122,29 @@ function Home() {
                   ></motion.rect>
                 </g>
               </motion.svg>
-            </div>
-            <div className="service_icon_container">
+              <p className="subtitle_menu">Aplicaciones Moviles</p>
+            </motion.div>
+            <motion.div
+              className="service_icon_container"
+              whileHover={{ scale: 1.05 }}
+              className="service_icon_container"
+            >
               <motion.img src={require("./img/ui.svg")} height={"150px"} />
-            </div>
-            <div className="service_icon_container">
+              <p className="subtitle_menu">Aplicaciones Web</p>
+            </motion.div>
+            <motion.div
+              className="service_icon_container"
+              whileHover={{ scale: 1.05 }}
+              className="service_icon_container"
+            >
               <img src={require("./img/automation.svg")} height={"150px"} />
-            </div>
+              <p className="subtitle_menu">Automatizacion</p>
+            </motion.div>
           </div>
         </div>
+      </div>
+      <div>
+        <div className="button_bussiness"></div>
       </div>
     </motion.div>
   );
