@@ -122,12 +122,16 @@ function Home() {
                   ></motion.rect>
                 </g>
               </motion.svg>
+
               <p className="subtitle_menu">Aplicaciones Moviles</p>
             </motion.div>
             <motion.div
               className="service_icon_container"
               whileHover={{ scale: 1.05 }}
               className="service_icon_container"
+              onClick={() => {
+                history.push("/WebApp");
+              }}
             >
               <motion.img src={require("./img/ui.svg")} height={"150px"} />
               <p className="subtitle_menu">Aplicaciones Web</p>

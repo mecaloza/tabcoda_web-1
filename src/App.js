@@ -12,6 +12,7 @@ import Home from "./Home";
 import Mobile from "./Mobile";
 import New2 from "./New2";
 import TopBar from "./TopBar";
+import WebApp from "./WebApp";
 
 import { AnimatePresence } from "framer-motion";
 
@@ -21,7 +22,7 @@ function App() {
 
   return (
     <>
-      <div style={{ backgroundColor: "black" }}>
+      <div>
         <AnimatePresence>
           <Switch location={location} key={location.key}>
             <Route exact path="/home">
@@ -29,6 +30,9 @@ function App() {
             </Route>
             <Route exact path="/mobile">
               <Mobile />
+            </Route>
+            <Route exact path="/Webapp">
+              <WebApp />
             </Route>
             <Route path="/">
               <LandingPage />
