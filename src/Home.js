@@ -14,6 +14,7 @@ import { useHistory } from "react-router-dom";
 
 function Home() {
   const history = useHistory();
+  
 
   const [animation, cycleAnimation] = useCycle("", "animatecel");
   const [animateCel, setAnimateCel] = useState({});
@@ -64,6 +65,8 @@ function Home() {
     await control_click_cel.start("animatecel");
     return history.push("/mobile");
   };
+
+  
 
   return (
     <motion.div
@@ -122,11 +125,13 @@ function Home() {
             </div>
             <div className="service_icon_container">
               <motion.img src={require("./img/ui.svg")} height={"150px"} onClick={() => {
-                        history.push("/WebApp")
+                        return history.push("/WebApp")
                       }}/>
             </div>
             <div className="service_icon_container">
-              <img src={require("./img/automation.svg")} height={"150px"} />
+              <img src={require("./img/automation.svg")} height={"150px"}
+              onClick={() => {
+                return history.push("/DesktopApp") }}/>
             </div>
           </div>
         </div>

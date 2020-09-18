@@ -13,16 +13,18 @@ import Mobile from "./Mobile";
 import New2 from "./New2";
 import TopBar from "./TopBar";
 import WebApp from "./WebApp";
+import DesktopApp from "./DesktopApp";
 
 import { AnimatePresence } from "framer-motion";
 
 function App() {
   const location = useLocation();
-  console.log("cesar");
+  console.log("Cesar");
+  console.log("Esteban");
 
   return (
     <>
-      <div>
+      <div style={{ backgroundColor: "black" }}>
         <AnimatePresence>
           <Switch location={location} key={location.key}>
             <Route exact path="/home">
@@ -33,6 +35,9 @@ function App() {
             </Route>
             <Route exact path="/Webapp">
               <WebApp />
+            </Route>
+            <Route exact path="/DesktopApp">
+              <DesktopApp />
             </Route>
             <Route path="/">
               <LandingPage />
