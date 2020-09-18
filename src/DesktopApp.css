@@ -25,3 +25,166 @@
   background-repeat: no-repeat; 
   background-size: cover */
   }
+
+
+  .popup_txt2d{
+    font-size: 6vw;
+    font-family: "Bangers";
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* margin-top: 1%; */
+
+    
+    /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+        1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
+    }
+.popup_txt3d {
+        font-size: 7vw;
+        font-family: "Bangers";
+        color:#20Fc00;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        /* margin-top: 1%; */
+    
+        
+        /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+            1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
+        }
+
+.text_contd{ 
+          padding: 10px;
+          justify-content: center;
+          align-items: center;
+        margin-top:-5vh}
+
+        
+.popup_txt4d {
+    font-size: 2.5vw;
+    font-family: "Effra_light";
+    color:white;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+    
+    /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+        1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
+    }
+
+    .popup_txt5d {
+      font-size: 2vw;
+      font-family: "Effra_light";
+      text-align: center;
+      color:white;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      margin-top: 0.5%;
+  
+      
+      /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+          1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
+      }
+    
+
+    
+    .text_container1d {
+        
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        
+        flex-direction: row;
+        
+        /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+            1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
+        }
+
+
+        @media (max-width: 500px) {
+
+          .text_contd{ 
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+          margin-top:-5vh}
+
+          .text_container1d {
+        
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            
+            flex-direction: row;
+            
+            /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+                1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
+            }
+          .popup_txt2d {
+            font-size: 3em;
+            font-family: "Bangers";
+            color: white;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            /* margin-top: 1%; */
+        
+            
+            /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+                1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
+            }
+        .popup_txt3d {
+                font-size: 3em;
+                font-family: "Bangers";
+                color:#20Fc00;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                /* margin-top: 1%; */
+            
+                
+                /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+                    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
+                }
+        
+                
+        .popup_txt4d {
+            font-size: 7vw;
+            font-family: "Effra_light";
+            color:white;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin-top: 10%;
+            margin-bottom: 4%;
+            text-align: center;
+            max-width: 90%;
+            
+            /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+                1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
+            }
+        
+            .popup_txt5d {
+              font-size: 5.3vw;
+              font-family: "Effra_light";
+              color:white;
+              justify-content: center;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              margin-top: 2%;
+          
+              
+              /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+                  1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
+              }
+     
+        }
