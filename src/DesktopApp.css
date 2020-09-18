@@ -1,0 +1,27 @@
+.desk{
+    /* background-image: url("./img/sky.svg"); */
+    width: 100%;
+    background-color: black;
+    min-height: 100vh;
+    /* max-height: 1200px; */
+    justify-content: center;
+    align-items: center;
+    background-image: url("./img/world.gif");
+    background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+    
+    /* background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover */
+  }
+  .world{
+    /* background-image: url("./img/sky.svg"); */
+   
+    margin-right: 40%;
+    
+    
+    /* background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover */
+  }

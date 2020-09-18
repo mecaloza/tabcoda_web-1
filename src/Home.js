@@ -14,6 +14,7 @@ import { useHistory, Link } from "react-router-dom";
 
 function Home() {
   const history = useHistory();
+  
 
   const [animation, cycleAnimation] = useCycle("", "animatecel");
   const [animateCel, setAnimateCel] = useState({});
@@ -65,6 +66,8 @@ function Home() {
     return history.push("/mobile");
   };
 
+  
+
   return (
     <motion.div
       className="home_container"
@@ -73,6 +76,7 @@ function Home() {
       animate="visible"
       exit={{}}
     >
+
       <div className="calc_height">
         <TopBar />
         <div className="subcontainer_width">
@@ -137,7 +141,9 @@ function Home() {
                   history.push("/WebApp");
                 }}
               >
-                <motion.img src={require("./img/ui.svg")} height={"150px"} />
+                <motion.img src={require("./img/ui.svg")} height={"150px"} onClick={() => {
+                        return history.push("/WebApp")
+                      }}/>
                 <p className="subtitle_menu">Aplicaciones Web</p>
               </motion.div>
               <motion.div
@@ -145,7 +151,9 @@ function Home() {
                 whileHover={{ scale: 1.05 }}
                 className="service_icon_container"
               >
-                <img src={require("./img/automation.svg")} height={"150px"} />
+                <img src={require("./img/automation.svg")} height={"150px"}
+              onClick={() => {
+                return history.push("/DesktopApp") }}/>
                 <p className="subtitle_menu">Automatizacion</p>
               </motion.div>
             </div>
