@@ -45,7 +45,7 @@ function TopBar() {
       <div className="social_icons_container">
         <FontAwesomeIcon icon={faWhatsapp} className="social_icon" />
         {/* <FontAwesomeIcon icon={faGithub} className="social_icon" /> */}
-        <a href="http://www.instagram.com">
+        <a href="https://www.instagram.com/tabcoda.dev/">
           <FontAwesomeIcon icon={faInstagram} className="social_icon" />
         </a>
       </div>
