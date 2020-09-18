@@ -247,11 +247,21 @@ function Mobile() {
             <div className="text_about_content_container">
               <p style={{ fontSize: "20px", lineHeight: "normal" }}>
                 <span style={{ fontWeight: "bold" }}>
-                  Una idea como la tuya requiere expertos como nosotros!{" "}
+                  Una idea como la tuya requiere expertos como nosotros!.{" "}
                 </span>
                 Mas que un desarrollador seremos el aliado estrategico que tu
-                proyecto necesita. Te acompañeros desde e el bosquejo de tu idea
+                proyecto necesita, te acompañeros desde el bosquejo de tu idea
                 hasta la descarga final en las tiendas mobiles.
+              </p>
+              <p
+                style={{
+                  fontSize: "20px",
+                  lineHeight: "normal",
+                  fontWeight: "bold",
+                  marginTop: "3px",
+                }}
+              >
+                Déjanos superar tus expectativas!
               </p>
             </div>
             <p class="text_about_subtitle">Nuestro Proceso</p>
