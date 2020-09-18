@@ -15,7 +15,7 @@ global.counter = 0;
 function LandingPage() {
   const history = useHistory();
 
-  const [positions, setPositions] = useState([1, 1, 1, 1, 1, 1, 1, 1]);
+  const [positions, setPositions] = useState([]);
   const [isBlink, setIsBlink] = useState(false);
   const [isClick, setIsClick] = useState(false);
   const [interval_c, setInterval_c] = useState();
@@ -29,34 +29,32 @@ function LandingPage() {
 
   //blink cursor effect
   useEffect(() => {
-    setInterval(() => blink(), 500);
+    setInterval(() => blink(), 350);
   }, []);
 
   const blink = () => {
     setIsBlink((old_value) => !old_value);
   };
 
-  const startTyping = () => {
-    console.log("si");
-    setIsClick(true);
-  };
-
   useEffect(() => {
+    let s;
     if (isClick) {
-      let s = setInterval(() => type(), 300);
-      setInterval_c(s);
+      s = setInterval(() => type(), 200);
     }
+    return () => {
+      clearTimeout(s);
+    };
   }, [isClick]);
 
-  // const type = () => {
-  //   global.counter = global.counter + 1;
-  //   console.log("entre");
-  //   if (global.counter === 9) {
-  //     setTimeout(() => (history.push("/home"), 2000));
-  //   } else if (global.counter < 9) {
-  //     setPositions((old_array) => [...old_array, 1]);
-  //   }
-  // };
+  const type = () => {
+    global.counter = global.counter + 1;
+    console.log("entre");
+    if (global.counter === 9) {
+      setTimeout(() => (history.push("/home"), 1000));
+    } else if (global.counter < 9) {
+      setPositions((old_array) => [...old_array, 1]);
+    }
+  };
 
   return (
     <motion.div
@@ -64,12 +62,9 @@ function LandingPage() {
       variants={pageVariants}
       animate={{}}
       exit="exit"
+      onClick={() => setIsClick(true)}
     >
-      <div
-        // className={`txtcontainer ${global.counter >= 9 ? "fade-out" : null}`}
-        className={`txtcontainer`}
-        onClick={() => startTyping()}
-      >
+      <div className={`txtcontainer`}>
         <img
           src={require(`./img/tabcoda_open.svg`)}
           height={100}
@@ -93,7 +88,7 @@ function LandingPage() {
           className={"open_close"}
         />
       </div>
-      <p className={`textHome`}>Haz Click para Ingresar</p>
+      <p className={`textHome`}>Haz Click Para Ingresar</p>
     </motion.div>
   );
 }
