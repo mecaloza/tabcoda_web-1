@@ -178,7 +178,7 @@
 
 .calc_height {
   height: calc(100vh - 120px);
-  min-height: 640px;
+  min-height: 620px;
 }
 
 @media (max-width: 768px) {
