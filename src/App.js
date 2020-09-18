@@ -16,7 +16,6 @@ import WebApp from "./WebApp";
 import DesktopApp from "./DesktopApp";
 import Business from "./Business";
 
-
 import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -40,6 +39,8 @@ function App() {
             </Route>
             <Route exact path="/DesktopApp">
               <DesktopApp />
+            </Route>
+
             <Route exact path="/business">
               <Business />
             </Route>
