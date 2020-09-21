@@ -32,7 +32,7 @@ function WebApp() {
 
       <div className="popup_txt5">
         Con una Web app nos solo podrás mostrar información sino que también
-        permite que usuarios
+        permitirás que usuarios
       </div>
       <div className="popup_txt5">
         internos y externos interactúen, accedan a bases de datos, realicen
@@ -62,7 +62,7 @@ function WebApp() {
 
     <div className="popup_txt5">
       Con una Web app nos solo podrás mostrar información sino que también
-      permite que usuarios internos y externos interactúen, accedan a bases de datos, realicen
+      permitirás que usuarios internos y externos interactúen, accedan a bases de datos, realicen
       cálculos, pagos...
     </div>
     

@@ -45,12 +45,12 @@ function DesktopApp() {
         </div>
 
         <div className="popup_txt4d">
-            Nos adaptamos a cualquier necesitad de automatización digital que tenga tu empresa.
+        Nos adaptamos a cualquier necesidad de automatización digital que tenga tu empresa.
         
       </div>
 
         <div className="popup_txt5d">
-      Envió de correos automáticos 
+      Envío de correos automáticos 
       </div>
       <div className="popup_txt5d">
       Chatbots
@@ -59,7 +59,7 @@ function DesktopApp() {
       Web scraping (extraer información de páginas web o aplicativos)
       </div>
       <div className="popup_txt5d">
-      Generación de archivos pdfs automáticos
+      Generación de archivos PDF automáticos
       </div>
      
       <div className="popup_txt5d">

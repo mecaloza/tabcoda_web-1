@@ -249,9 +249,10 @@ function Mobile() {
                 <span style={{ fontWeight: "bold" }}>
                   Una idea como la tuya requiere expertos como nosotros!.{" "}
                 </span>
-                Mas que un desarrollador seremos el aliado estrategico que tu
-                proyecto necesita, te acompañeros desde el bosquejo de tu idea
-                hasta la descarga final en las tiendas mobiles.
+                Más que un desarrollador seremos el aliado estratégico que tu
+                proyecto necesita, te acompañamos desde el bosquejo de tu idea
+                hasta la descarga final en las tiendas móviles.
+
               </p>
               <p
                 style={{

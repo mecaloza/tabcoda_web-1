@@ -131,7 +131,7 @@ function Home() {
                   </g>
                 </motion.svg>
 
-                <p className="subtitle_menu">Aplicaciones Moviles</p>
+                <p className="subtitle_menu">Aplicaciones Móviles</p>
               </motion.div>
               <motion.div
                 className="service_icon_container"
@@ -154,7 +154,7 @@ function Home() {
                 <img src={require("./img/automation.svg")} height={"150px"}
               onClick={() => {
                 return history.push("/DesktopApp") }}/>
-                <p className="subtitle_menu">Automatizacion</p>
+                <p className="subtitle_menu">Automatización</p>
               </motion.div>
             </div>
           </div>
