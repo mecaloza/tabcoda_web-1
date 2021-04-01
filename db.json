@@ -1,0 +1,297 @@
+{"employeeOfTheMonth":{
+  "brands": [
+    {
+      "id": 1,
+      "description": "BAIC",
+      "image": null,
+      "created_at": "2021-03-31T14:56:38.000000Z",
+      "updated_at": "2021-03-31T14:56:38.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/1"
+    },
+    {
+      "id": 2,
+      "description": "BRILLIANCE",
+      "image": null,
+      "created_at": "2021-03-31T14:56:38.000000Z",
+      "updated_at": "2021-03-31T14:56:38.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/2"
+    },
+    {
+      "id": 3,
+      "description": "BYD",
+      "image": null,
+      "created_at": "2021-03-31T14:56:38.000000Z",
+      "updated_at": "2021-03-31T14:56:38.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/3"
+    }
+  ],
+  "models": [
+    {
+      "id": 1,
+      "description": "X25 CONFORT 1,5",
+      "brand_id": 1,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/1"
+    },
+    {
+      "id": 2,
+      "description": "X35 ELITE 1,5",
+      "brand_id": 1,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/2"
+    },
+    {
+      "id": 3,
+      "description": "H220 1,5",
+      "brand_id": 2,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/3"
+    }
+   
+  ],
+  "bodywork_types": [
+    {
+      "id": 1,
+      "description": "Sedan",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/1"
+    },
+    {
+      "id": 2,
+      "description": "SUV",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/2"
+    },
+    {
+      "id": 3,
+      "description": "Wagon",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/3"
+    },
+    {
+      "id": 4,
+      "description": "Coupe",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/4"
+    },
+    {
+      "id": 5,
+      "description": "Hatchback",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/5"
+    },
+    {
+      "id": 6,
+      "description": "Pickup",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/6"
+    }
+  ],
+  "fuel_types": [
+    {
+      "id": 1,
+      "description": "Gasolina",
+      "created_at": "2021-03-31T14:57:14.000000Z",
+      "updated_at": "2021-03-31T14:57:14.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/fuel-types/1"
+    },
+    {
+      "id": 2,
+      "description": "Díesel",
+      "created_at": "2021-03-31T14:57:14.000000Z",
+      "updated_at": "2021-03-31T14:57:14.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/fuel-types/2"
+    },
+    {
+      "id": 3,
+      "description": "Gas",
+      "created_at": "2021-03-31T14:57:14.000000Z",
+      "updated_at": "2021-03-31T14:57:14.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/fuel-types/3"
+    },
+    {
+      "id": 4,
+      "description": "Natural",
+      "created_at": "2021-03-31T14:57:14.000000Z",
+      "updated_at": "2021-03-31T14:57:14.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/fuel-types/4"
+    },
+    {
+      "id": 5,
+      "description": "Eléctrico",
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/fuel-types/5"
+    },
+    {
+      "id": 6,
+      "description": "Híbrido",
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/fuel-types/6"
+    }
+  ],
+  "transmission_types": [
+    {
+      "id": 1,
+      "description": "Manual",
+      "created_at": "2021-03-31T14:57:14.000000Z",
+      "updated_at": "2021-03-31T14:57:14.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/transmission-types/1"
+    },
+    {
+      "id": 2,
+      "description": "Automática",
+      "created_at": "2021-03-31T14:57:14.000000Z",
+      "updated_at": "2021-03-31T14:57:14.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/transmission-types/2"
+    },
+    {
+      "id": 3,
+      "description": "Secuencial",
+      "created_at": "2021-03-31T14:57:14.000000Z",
+      "updated_at": "2021-03-31T14:57:14.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/transmission-types/3"
+    }
+  ],
+  "plate_type": {
+    "par": 0,
+    "impar": 1
+  },
+  "colors": [
+    {
+      "id": 1,
+      "description": "Amarillo",
+      "hex": "FFFF00",
+      "created_at": "2021-03-31T14:57:17.000000Z",
+      "updated_at": "2021-03-31T14:57:17.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/colors/1"
+    },
+    {
+      "id": 2,
+      "description": "Azul",
+      "hex": "0000FF",
+      "created_at": "2021-03-31T14:57:18.000000Z",
+      "updated_at": "2021-03-31T14:57:18.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/colors/2"
+    },
+    {
+      "id": 3,
+      "description": "Rojo",
+      "hex": "FF0000",
+      "created_at": "2021-03-31T14:57:18.000000Z",
+      "updated_at": "2021-03-31T14:57:18.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/colors/3"
+    },
+    {
+      "id": 4,
+      "description": "Verde",
+      "hex": "008F39",
+      "created_at": "2021-03-31T14:57:18.000000Z",
+      "updated_at": "2021-03-31T14:57:18.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/colors/4"
+    },
+    {
+      "id": 5,
+      "description": "Gris",
+      "hex": "9C9C9C",
+      "created_at": "2021-03-31T14:57:18.000000Z",
+      "updated_at": "2021-03-31T14:57:18.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/colors/5"
+    },
+    {
+      "id": 6,
+      "description": "Naranja",
+      "hex": "FF8000",
+      "created_at": "2021-03-31T14:57:18.000000Z",
+      "updated_at": "2021-03-31T14:57:18.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/colors/6"
+    }
+  ],
+  "metas": [
+    {
+      "id": 1,
+      "description": "Sun roof",
+      "meta_group_id": 1,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/metas/1"
+    },
+    {
+      "id": 2,
+      "description": "Bluetooth",
+      "meta_group_id": 1,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/metas/2"
+    },
+    {
+      "id": 3,
+      "description": "Tapizado de cuero",
+      "meta_group_id": 1,
+      "created_at": "2021-03-31T14:57:16.000000Z",
+      "updated_at": "2021-03-31T14:57:16.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/metas/3"
+    }
+  ],
+  "price_range": {
+    "min": "20,00",
+    "max": "80,00"
+  },
+  "vehicle_status": [
+    {
+      "value": 1,
+      "status": "Nuevo",
+      "resource_url": "http://127.0.0.1:8000/admin/vehicles"
+    }
+  ],
+  "millage_range": {
+    "min": 0,
+    "max": 10000
+  },
+  "years": [
+    {
+      "year": 2020,
+      "resource_url": "http://127.0.0.1:8000/admin/vehicles"
+    },
+    {
+      "year": 2021,
+      "resource_url": "http://127.0.0.1:8000/admin/vehicles"
+    }
+  ],
+  "number_passengers": [
+    {
+      "passengers": 2,
+      "resource_url": "http://127.0.0.1:8000/admin/vehicles"
+    },
+    {
+      "passengers": 4,
+      "resource_url": "http://127.0.0.1:8000/admin/vehicles"
+    }
+  ],
+  "number_doors": [
+    {
+      "number_doors": 2,
+      "resource_url": "http://127.0.0.1:8000/admin/vehicles"
+    },
+    {
+      "number_doors": 4,
+      "resource_url": "http://127.0.0.1:8000/admin/vehicles"
+    }
+  ]
+}}
